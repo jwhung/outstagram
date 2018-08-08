@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import LeanCloud
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // applicationId 即 App Id，applicationKey 是 App Key
+        LeanCloud.initialize(applicationID: "G2grQBCylKccGQaxNVtMzfQz-9Nh9j0Va", applicationKey: "1yPoJaxDwCAeLPJ877Co8Cyt")
+        
+        let post = LCObject(className: "TestObject")
+        
+        post.set("words", value: "Hello World!")
+        
+        post.save()
+        
         return true
     }
 
@@ -35,6 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        // applicationId 即 App Id，applicationKey 是 App Key
+        
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

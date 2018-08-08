@@ -12,9 +12,13 @@
 		CB2215B6211B4EDC0068EE1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2215B4211B4EDC0068EE1E /* Main.storyboard */; };
 		CB2215B8211B4EDF0068EE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2215B7211B4EDF0068EE1E /* Assets.xcassets */; };
 		CB2215BB211B4EDF0068EE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2215B9211B4EDF0068EE1E /* LaunchScreen.storyboard */; };
+		DF99CA413E475AC7CAE2F6A2 /* Pods_outstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046821CBCA85A71336AFFF1A /* Pods_outstagram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046821CBCA85A71336AFFF1A /* Pods_outstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_outstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4163EDE4A37AD558AC216F33 /* Pods-outstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-outstagram/Pods-outstagram.release.xcconfig"; sourceTree = "<group>"; };
+		A5170642A2DDB403C87516E9 /* Pods-outstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-outstagram/Pods-outstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		CB2215AD211B4EDC0068EE1E /* outstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = outstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2215B0211B4EDC0068EE1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB2215B2211B4EDC0068EE1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF99CA413E475AC7CAE2F6A2 /* Pods_outstagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		436C42B7D9619712B86ED489 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5170642A2DDB403C87516E9 /* Pods-outstagram.debug.xcconfig */,
+				4163EDE4A37AD558AC216F33 /* Pods-outstagram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CB2215A4211B4EDC0068EE1E = {
 			isa = PBXGroup;
 			children = (
 				CB2215AF211B4EDC0068EE1E /* outstagram */,
 				CB2215AE211B4EDC0068EE1E /* Products */,
+				436C42B7D9619712B86ED489 /* Pods */,
+				D5C4E84113D21786B220A52F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = outstagram;
 			sourceTree = "<group>";
 		};
+		D5C4E84113D21786B220A52F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				046821CBCA85A71336AFFF1A /* Pods_outstagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB2215BF211B4EDF0068EE1E /* Build configuration list for PBXNativeTarget "outstagram" */;
 			buildPhases = (
+				F2F4B95624A12ED6283081D2 /* [CP] Check Pods Manifest.lock */,
 				CB2215A9211B4EDC0068EE1E /* Sources */,
 				CB2215AA211B4EDC0068EE1E /* Frameworks */,
 				CB2215AB211B4EDC0068EE1E /* Resources */,
+				6A706C3197E2B151FDF7365C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A706C3197E2B151FDF7365C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-outstagram/Pods-outstagram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/LeanCloud/LeanCloud.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LeanCloud.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-outstagram/Pods-outstagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2F4B95624A12ED6283081D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-outstagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB2215A9211B4EDC0068EE1E /* Sources */ = {
@@ -278,6 +345,7 @@
 		};
 		CB2215C0211B4EDF0068EE1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5170642A2DDB403C87516E9 /* Pods-outstagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +364,7 @@
 		};
 		CB2215C1211B4EDF0068EE1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4163EDE4A37AD558AC216F33 /* Pods-outstagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
