@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CB2215B1211B4EDC0068EE1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2215B0211B4EDC0068EE1E /* AppDelegate.swift */; };
-		CB2215B3211B4EDC0068EE1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2215B2211B4EDC0068EE1E /* ViewController.swift */; };
 		CB2215B6211B4EDC0068EE1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2215B4211B4EDC0068EE1E /* Main.storyboard */; };
 		CB2215B8211B4EDF0068EE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2215B7211B4EDF0068EE1E /* Assets.xcassets */; };
 		CB2215BB211B4EDF0068EE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2215B9211B4EDF0068EE1E /* LaunchScreen.storyboard */; };
+		CB95CA81211C81D4009E1AD7 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95CA80211C81D4009E1AD7 /* SignInVC.swift */; };
+		CB95CA83211C8203009E1AD7 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95CA82211C8203009E1AD7 /* SignUpVC.swift */; };
+		CB95CA85211C8228009E1AD7 /* ResetPwdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB95CA84211C8228009E1AD7 /* ResetPwdVC.swift */; };
 		DF99CA413E475AC7CAE2F6A2 /* Pods_outstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046821CBCA85A71336AFFF1A /* Pods_outstagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +23,13 @@
 		A5170642A2DDB403C87516E9 /* Pods-outstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-outstagram/Pods-outstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		CB2215AD211B4EDC0068EE1E /* outstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = outstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2215B0211B4EDC0068EE1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB2215B2211B4EDC0068EE1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB2215B5211B4EDC0068EE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB2215B7211B4EDF0068EE1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB2215BA211B4EDF0068EE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB2215BC211B4EDF0068EE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB95CA80211C81D4009E1AD7 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		CB95CA82211C8203009E1AD7 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		CB95CA84211C8228009E1AD7 /* ResetPwdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPwdVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +75,13 @@
 			isa = PBXGroup;
 			children = (
 				CB2215B0211B4EDC0068EE1E /* AppDelegate.swift */,
-				CB2215B2211B4EDC0068EE1E /* ViewController.swift */,
 				CB2215B4211B4EDC0068EE1E /* Main.storyboard */,
 				CB2215B7211B4EDF0068EE1E /* Assets.xcassets */,
 				CB2215B9211B4EDF0068EE1E /* LaunchScreen.storyboard */,
 				CB2215BC211B4EDF0068EE1E /* Info.plist */,
+				CB95CA80211C81D4009E1AD7 /* SignInVC.swift */,
+				CB95CA82211C8203009E1AD7 /* SignUpVC.swift */,
+				CB95CA84211C8228009E1AD7 /* ResetPwdVC.swift */,
 			);
 			path = outstagram;
 			sourceTree = "<group>";
@@ -202,7 +208,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB2215B3211B4EDC0068EE1E /* ViewController.swift in Sources */,
+				CB95CA81211C81D4009E1AD7 /* SignInVC.swift in Sources */,
+				CB95CA83211C8203009E1AD7 /* SignUpVC.swift in Sources */,
+				CB95CA85211C8228009E1AD7 /* ResetPwdVC.swift in Sources */,
 				CB2215B1211B4EDC0068EE1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

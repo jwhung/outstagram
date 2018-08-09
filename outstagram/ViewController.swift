@@ -15,11 +15,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        let post = LCObject(className: "TestObject")
-        
-        post.set("words", value: "Hello World!")
-        
-        post.save()
     }
 
     override func didReceiveMemoryWarning() {
