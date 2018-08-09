@@ -1,5 +1,5 @@
 //
-//  SignUpVC.swift
+//  resetPswdVC.swift
 //  outstagram
 //
 //  Created by Jw on 2018/8/9.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpVC: UIViewController {
+class resetPswdVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

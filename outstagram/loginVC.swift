@@ -1,5 +1,5 @@
 //
-//  SingInVC.swift
+//  loginVC.swift
 //  outstagram
 //
 //  Created by Jw on 2018/8/9.
@@ -8,15 +8,8 @@
 
 import UIKit
 
-class SingInVC: UIViewController {
-    
-    @IBOutlet weak var usernameText: UITextField!
-    @IBOutlet weak var pwdText: UITextField!
-    
-    @IBOutlet weak var SignInBtn: UIButton!
-    @IBOutlet weak var SignUpBtn: UIButton!
-    @IBOutlet weak var ResetPwd: UIButton!
-    
+class loginVC: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

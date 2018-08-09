@@ -10,12 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sign InVC-->
+        <!--login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" userLabel="Sign InVC" customClass="SingInVC" customModule="outstagram" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="SignInVC">
+                <viewController id="BYZ-38-t0r" userLabel="login" customClass="loginVC" customModule="outstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -72,31 +71,19 @@
                                     <segue destination="Ed6-or-4b7" kind="presentation" id="y35-gR-c69"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yG-Vq-zvL">
-                                <rect key="frame" x="283" y="306" width="52" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <state key="normal" title="忘记密码？"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="ResetPwd" destination="6yG-Vq-zvL" id="J2a-LL-SII"/>
-                        <outlet property="SignBtn" destination="1TN-MK-AOa" id="YKJ-3y-rE6"/>
-                        <outlet property="SignUpBtn" destination="dYI-oX-WWp" id="Sme-7z-MDZ"/>
-                        <outlet property="pwdText" destination="ep0-Gi-c1Y" id="1Pd-Ri-Yqf"/>
-                        <outlet property="usernameText" destination="90E-jR-Awa" id="WjS-Yf-aFW"/>
-                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
-        <!--Sign UpVC-->
+        <!--sign-->
         <scene sceneID="CE6-rq-IAb">
             <objects>
-                <viewController id="Ed6-or-4b7" customClass="SignUpVC" customModule="outstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ed6-or-4b7" userLabel="sign" customClass="signVC" customModule="outstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s6r-RB-g9E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="783" y="134"/>
         </scene>
-        <!--Reset PwdVC-->
+        <!--reset-->
         <scene sceneID="1Zq-h3-h1j">
             <objects>
-                <viewController id="KG1-Cy-JBw" customClass="ResetPwdVC" customModule="outstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KG1-Cy-JBw" userLabel="reset" customClass="resetPswdVC" customModule="outstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3nZ-FC-eUJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
